@@ -1,4 +1,5 @@
 import logInImage from '../../assets/Login.jpg'
+import SocialLogin from '../../components/SocialLogin/SocialLogin';
 
 const SignIn = () => {
     return (
@@ -9,7 +10,10 @@ const SignIn = () => {
                 </div>
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <h1 className="text-5xl font-serif mt-10 text-center font-bold">Sign In</h1>
-                    <form className="card-body">
+                    <div className='my-5'>
+                        <SocialLogin></SocialLogin>
+                    </div>
+                    <form className="card-body pt-0">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
